@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 });
 
 app.all("*", (req, res) => {
-  res.status(404).send("Not found router!!!");
+  res.status(404).send("Sorry!! Not found router.");
 });
 
 // listen port
