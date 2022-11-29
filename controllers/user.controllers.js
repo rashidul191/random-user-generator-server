@@ -71,6 +71,11 @@ module.exports.updateUserData = (req, res) => {
   }
 };
 
+module.exports.updateMultipleUserData = (req, res) => {
+  console.log("update multiple date");
+  res.send("update multiple data");
+};
+
 // delete user data to use delete method ("/user/delete/:id")
 module.exports.deleteUserData = (req, res) => {
   const { id } = req.params;

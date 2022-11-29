@@ -33,6 +33,9 @@ router.route("/save").post(userControllers.saveUserData);
 // router patch update user data use id
 router.route("/update/:id").patch(userControllers.updateUserData);
 
+// router patch update multiple user data
+router.route("/bulk-update/:id").patch(userControllers.updateMultipleUserData)
+
 // router delete , delete user data use of id
 router.route("/delete/:id").delete(userControllers.deleteUserData);
 
